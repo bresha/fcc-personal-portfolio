@@ -1,0 +1,175 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* globals */
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* navbar */
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #984447;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.nav-link {
+  font-size: 1.8rem;
+  padding: 2rem;
+  text-decoration: none;
+  color: white;
+}
+
+/* welcome */
+#welcome-section {
+  background-color: #add9f4;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* projects */
+#projects {
+  background-color: #476c9b;
+}
+
+#projects h2 {
+  padding: 5rem;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.project-name {
+  background-color: #984447;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+/* contact */
+#contact {
+  background-color: #101419;
+  color: white;
+}
+
+#contact p {
+  font-size: 3rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  margin: 1rem;
+  color: #984447;
+}
+
+/* footer */
+footer {
+  border-top: #984447 0.2rem solid;
+  background-color: #101419;
+  color: white;
+}
+
+footer p {
+  padding: 2rem;
+  text-align: right;
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  #navbar {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin-right: 0;
+  }
+
+  .nav-link {
+    padding: 1rem;
+  }
+
+  #contact p {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
